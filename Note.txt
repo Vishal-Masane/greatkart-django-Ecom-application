@@ -1,0 +1,14 @@
+Install Dependancy in this environment:
+Djnago3.1   
+	-- Jevha apan Djnago3.1 he install karto tya veles wsgiref, sqlparse, pyzt ya 3 dependancyes
+	   bydefault install hotat.
+
+
+
+
+
+db.sqlite3 : This file automatically created whene you hit first "py manage.py runserver" command.
+get_object_or_404(): ha function inbuild function ahe jar, yala model name ani field_name as a parameter lagtat... jar object asel tar to return karto jar nasel tar 404 error show karto.
+context_processors(): Ha function request gheto as a parameter ani dictinory as a data return karto... ha function as a context sarkha act hoto.. ya function sathi context_processors.py navachi python file create karavi lagte tya aap madhe,
+	 nantr tya .py file madhe ek function banaun je result aplyala nehmi use karayla lagnar ahe te retun madhe lihava, 
+	 nantr ha context_processors settings.py file madhe mention karava, nantr jevha kadhi aplyala to context data lagel tevha to {{}} ya format madhe use karava.
