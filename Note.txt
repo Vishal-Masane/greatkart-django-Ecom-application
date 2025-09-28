@@ -12,3 +12,10 @@ get_object_or_404(): ha function inbuild function ahe jar, yala model name ani f
 context_processors(): Ha function request gheto as a parameter ani dictinory as a data return karto... ha function as a context sarkha act hoto.. ya function sathi context_processors.py navachi python file create karavi lagte tya aap madhe,
 	 nantr tya .py file madhe ek function banaun je result aplyala nehmi use karayla lagnar ahe te retun madhe lihava, 
 	 nantr ha context_processors settings.py file madhe mention karava, nantr jevha kadhi aplyala to context data lagel tevha to {{}} ya format madhe use karava.
+reverse(): It is used to generate dynamic URL. reverse is used to get the URL path from the name of the URL pattern. Instead of hardcoding URLs (like "/books/10/"), you use the URL "name" ("book-detail") and "args" 
+	 then reverse will generate the correct URL.
+
+
+7fwnc11ys9j652twtca1200o2g3ckn9b
+7fwnc11ys9j652twtca1200o2g3ckn9b
+7fwnc11ys9j652twtca1200o2g3ckn9b
