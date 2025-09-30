@@ -5,9 +5,11 @@ from carts.models import Cart, CartItem
 from carts.views import _cart_id
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.db.models import Q
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
+@login_required
 def store(request, category_slug = None):   # category_slug: This comes by url parameter
     categories = None
     products = None

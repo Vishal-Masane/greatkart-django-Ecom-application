@@ -58,3 +58,7 @@ $(document).ready(function() {
 }); 
 // jquery end
 
+
+setTimeout(function(){          // for registration succesfull alert message will disapear after 4 seconds
+    $('#message').fadeOut('slow')
+}, 4000)

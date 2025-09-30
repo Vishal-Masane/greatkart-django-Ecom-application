@@ -20,9 +20,11 @@ from django.conf.urls.static import static
 from django.conf import settings
 from store import urls as store_urls
 from carts import urls as cart_urls
+from accounts import urls as accounts_urls
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
     path('store/', include(store_urls.urlpatterns)),
-    path('cart/', include(cart_urls.urlpatterns))
+    path('cart/', include(cart_urls.urlpatterns)),
+    path('accounts/', include(accounts_urls.urlpatterns)),
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
