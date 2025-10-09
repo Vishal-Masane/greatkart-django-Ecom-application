@@ -22,5 +22,16 @@
 </footer>
 <!-- ========================= FOOTER END // ========================= -->
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.thumb a').click(function(e){
+			e.preventDefault();		//preventDefault: Whene you click on image then it will not open in new tab.
+			$('.mainImage img').attr('src', $(this).attr('href'));
+		})
+
+	})
+</script>
+
 </body>
 </html>

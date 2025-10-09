@@ -8,14 +8,20 @@ Djnago3.1
 
 
 db.sqlite3 : This file automatically created whene you hit first "py manage.py runserver" command.
-get_object_or_404(): ha function inbuild function ahe jar, yala model name ani field_name as a parameter lagtat... jar object asel tar to return karto jar nasel tar 404 error show karto.
+get_object_or_404(): ha function inbuild function ahe, yala model name ani field_name as a parameter lagtat... jar object asel tar to return karto jar nasel tar 404 error show karto.
 context_processors(): Ha function request gheto as a parameter ani dictinory as a data return karto... ha function as a context sarkha act hoto.. ya function sathi context_processors.py navachi python file create karavi lagte tya aap madhe,
 	 nantr tya .py file madhe ek function banaun je result aplyala nehmi use karayla lagnar ahe te retun madhe lihava, 
 	 nantr ha context_processors settings.py file madhe mention karava, nantr jevha kadhi aplyala to context data lagel tevha to {{}} ya format madhe use karava.
 reverse(): It is used to generate dynamic URL. reverse is used to get the URL path from the name of the URL pattern. Instead of hardcoding URLs (like "/books/10/"), you use the URL "name" ("book-detail") and "args" 
 	 then reverse will generate the correct URL.
+verbose_name: Jevha model chya navachya shevti 'y', kinva 'es' asel tar to model admin view var vevastit nay disat
+		tar te solve karnyasathi verbose_name_plural use kartat tya model chya class Meta madhe khalil dilya pramane.
+
+class ProductGallery(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, default=None)
+    image = models.ImageField(upload_to='store/products', max_length=255)
+    class Meta:
+        verbose_name = 'productgallery'
+        verbose_name_plural = 'product gallery'
 
 
-7fwnc11ys9j652twtca1200o2g3ckn9b
-7fwnc11ys9j652twtca1200o2g3ckn9b
-7fwnc11ys9j652twtca1200o2g3ckn9b
